@@ -4,3 +4,11 @@
     box-sizing: border-box;
     font-family: 'Helvetica Neue';
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CA3216;
+}
