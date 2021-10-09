@@ -1,31 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Simple Dropdown Menu</title>
+    <link rel="stylesheet" href="page.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <section id="bg">
-        <select id="colorPicker" onchange="colorPickerChange(this)">
-            <option value="red">Red</option>
-            <option value="black">Black</option>
-            <option value="white">White</option>
-        </select>
-    </section>
-    <script>
-        function colorPickerChange(pColor) {
-            bg = document.getElementsByTagName('body')[0];
-            color = pColor.value;
-            if(color=='black'){
-                bg.style.background = '#000000';
-            } if (color=='white') {
-                bg.style.background = '#FFFFFF';
-            } if (color=='red') {
-                bg.style.background = '#CA3216';
-            }
-        }
-        </script>
+    <select id="colorPicker" onchange="colorPickerChange(this)">
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+    </select>
+    <script src="onload.js"></script>
 </body>
 </html>
